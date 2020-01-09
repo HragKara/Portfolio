@@ -1,0 +1,7 @@
+sendgrid.env
+.vscode
+env/
+venv/
+__pycache__/
+.vscode/
+db.sqlite3

@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+*::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    /* background: rgb(46, 45, 45); */
+    background-color: #e7e5e4;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    background: #efefefef;
+    width: 100%;
+    
+}
+
+.contents-header{
+    padding: 17px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inline{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+}
+
+.inline a{
+    text-decoration: none;
+}
+
+.inline li:hover, .selected{
+    border-bottom: 1px solid #ffa500f0;
+}
+
+.inline li{
+    margin: 0 20px;
+    text-transform: uppercase;
+    list-style-type: none;
+    padding: 4px 15px;
+    letter-spacing: 5.2px;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    line-height: 2;
+    padding-right: 10%;
+}
+
+.contacts li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.contacts a{
+    text-decoration: none;
+}
+
+.contacts li:hover{
+    animation: rotate 1s;
+    animation-delay: 0.1s;
+    /* transform: rotate(0); */
+}
+
+@keyframes rotate{
+    0%, 30%{
+        transform: rotate(30deg);
+    }
+
+    30%, 60%{
+        transform: rotate(-30deg);
+    }
+    60%, 90%{
+        transform: rotate(30deg);
+    }
+
+    90%, 100%{
+        transform: rotate(0deg);
+    }
+}
+
+@media (min-width: 2560px){
+    .contents-header{
+        width: 60%;
+        margin: 0 auto;
+    }
+   
+}
+
+@media (max-width: 54.5em){
+    .inline{
+        padding: 0;
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 50em){
+    .inline{
+        padding: 0;
+    }
+}
+
+@media (max-width: 48em){
+    .inline{
+        padding: 0;
+    }
+    .contents-header{
+        justify-content: center;
+    }
+    .contacts{
+        display: none;
+    }
+}
+
+@media (max-width: 46.8em){
+    .contacts{
+        display: none;
+    }
+    .inline{
+        padding: 0;
+    }
+    .contents-header{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 39.8em){
+    .inline{
+        padding: 0;
+    }
+    .inline li{
+        padding: 4px 5px;
+    }
+    .contacts{
+        display: none;
+    }
+    .contents-header{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 29.75em){
+    .inline li{
+        margin: 0 10px;
+        letter-spacing: 1px;
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+}
+
+@media (max-width: 24em){
+    .inline li{
+        margin: 0 10px;
+        padding: 4px 0;
+    }
+}

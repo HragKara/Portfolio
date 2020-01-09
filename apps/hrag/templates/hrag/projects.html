@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Projects</title>
+    {% load static %}	
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/35d080b3b0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'hrag/css/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'hrag/css/projects.css' %}">
+</head>
+<body>
+    <header class="container">
+        <div class="contents-header">
+            <ul class="inline">
+                <li><a href="/">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li class="selected"><a href="projects">Projects</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+            <ul class="contacts">
+                <li><a href="mailto: hragkara@gmail.com" target="_blank"><i class="fas fa-envelope fa-lg"></i></a></li>
+                <li><a href="https://github.com/HragKara" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/hrag-karamanougian-aa9064103/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="main">
+        <div class="all-projects">
+            <div class="project">
+                <a href="http://13.57.227.159/dashboard" target="_blank">
+                    <div class="project-img contain">
+                        <img src="{% static 'hrag/img/Screen Shot 2019-12-25 at 7.08.52 PM.png' %}" alt="">
+                    </div>
+                    <div class="project-bottom contain">
+                        <div class="project-name">
+                            <h2>Finished</h2>
+                        </div>
+                        <div class="description">
+                            <p>Finished is a third party website for anyone that wants to resell or buy shoes with confidence. Built using Java with MySQL database and an admin page to add more shoes for users.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="project">
+                <a href="http://13.52.186.182/" target="_blank">
+                    <div class="project-img contain">
+                        <img src="{% static 'hrag/img/Screen Shot 2019-12-25 at 7.09.47 PM.png' %}" alt="">
+                    </div>
+                    <div class="project-bottom contain">
+                        <div class="project-name">
+                            <h2>Enigma</h2>
+                        </div>
+                        <div class="description">
+                            <p>Enigma is a way to play games without having to download any games or a console. Built using Python/Django.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

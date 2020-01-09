@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hrag Karamanougian</title>
+    {% load static %}	
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/35d080b3b0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'hrag/css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'hrag/css/nav.css' %}">
+</head>
+<body>
+    <header class="container">
+        <div class="contents-header">
+            <ul class="inline">
+                <li class="selected"><a href="/">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="projects">Projects</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+            <ul class="contacts">
+                <li><a href="mailto: hragkara@gmail.com" target="_blank"><i class="fas fa-envelope fa-lg"></i></a></li>
+                <li><a href="https://github.com/HragKara" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/hrag-karamanougian-aa9064103/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="main">
+        <h1 class="elegent">Hrag</h1>
+        <h1 class="elegent">Karamanougian</h1>
+    </div>
+    <div class="summary">
+        <h3 class="sum-desc">Welcome to my portfolio! I am a Full Stack Developer in Los Angeles, CA with experience in <span class="lang">Java</span>, <span class="lang">Python</span>, and <span class="lang">AngularJS</span>. Whether it's creating a website or building a bot, I enjoy coding and learning new techniques. Check out some of my projects.</h3>
+        <a id="opposite" class="button bounce" href="projects">Check out projects <i class="small material-icons">arrow_forward</i></a>
+        <a id="delay" class="button bounce" href="contact">Looking to hire <i class="small material-icons">arrow_forward</i></a>
+    </div>
+</body>
+</html>

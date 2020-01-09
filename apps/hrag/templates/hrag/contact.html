@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Me</title>
+    {% load static %}	
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/35d080b3b0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'hrag/css/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'hrag/css/contact.css' %}">
+</head>
+<body>
+    <header class="container">
+        <div class="contents-header">
+            <ul class="inline">
+                <li><a href="/">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="projects">Projects</a></li>
+                <li class="selected"><a href="contact">Contact</a></li>
+            </ul>
+            <ul class="contacts">
+                <li><a href="mailto: hragkara@gmail.com" target="_blank"><i class="fas fa-envelope fa-lg"></i></a></li>
+                <li><a href="https://github.com/HragKara" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/hrag-karamanougian-aa9064103/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="main">
+        <div class="details-section">
+            <div class="details-content">
+                <div class="details-form">
+                    <div class="contact-title">
+                        <h1 class="make-org">Contact Me</h1>
+                    </div>
+                    <form method="POST">
+                        {% csrf_token %}
+                        <input type="text" name="name" placeholder="Name">
+                        <input id="right" type="text" name="subject" placeholder="Subject">
+                        <input type="email" name="email" placeholder="Email">
+                        <textarea name="message" placeholder="Message"></textarea>
+                        <input type="submit" value="SUBMIT">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
